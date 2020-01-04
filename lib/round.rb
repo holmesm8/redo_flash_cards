@@ -41,9 +41,9 @@ class Round
       puts "#{@turns.last.feedback}"
     end
     puts "****** Game over! ******"
-    puts "You had #{number_correct} correct guesses out of #{@deck.count} for a total score of #{number_correct / @deck.count}."
-    puts "History - #{percent_correct_by_category(:History)}% correct"
-    puts "Sports - #{percent_correct_by_category(:Sports)}% correct"
-    puts "Geography - #{percent_correct_by_category(:Geography)}% correct"
+    puts "You had #{number_correct} correct guesses out of #{@deck.count} for a total score of #{(number_correct / @deck.count) * 100}%."
+    puts "History - #{percent_correct_by_category("STEM")}% correct"
+    puts "Sports - #{percent_correct_by_category("Turing Staff")}% correct"
+    puts "Geography - #{percent_correct_by_category("PopCulture")}% correct"
   end
 end

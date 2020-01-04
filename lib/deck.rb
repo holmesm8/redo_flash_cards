@@ -9,5 +9,4 @@ class Deck
   def cards_in_category(category)
     @cards.find_all {|card| card if card.category == category}
   end
-
 end
